@@ -3,6 +3,7 @@
     <title>Test Web Preograming</title>
 </head>
 <body>
+    <!-- Penjelasana awal-->
     <h1>Kawhi Leonard</h1>
     <p> Dia adalah seorang pemain NBA yang di draft oleh <i>Indiana Pacers</i> pada tahun 2011
     dan dia juga langsung di <i>Trade</i> oleh Indiana ke <i>San Antonio Spurs</i> untuk George Hill .
@@ -14,27 +15,29 @@
     <p>Tetapi setelah beberapa season di NBA setiap tahunnya dia melakukan improvement yang
     besar kepada permainannya , tahun saat Spurs menjadi juara Kawhi di temani oleh <b>Tim Duncan</b> ,
      <b>Manu Ginobilli</b> dan <b>Tony Parker</b> meraka adalah <sup>Big 3<sup> </p>
-    
+    <!-- Akhir dari Penjelasan-->
 
     <hr>
-    <p> Kawhi Telah mengumpulkan :</p>
-    <ul>
-        <li>2x DPOY </li>
-            <ul>
-                <li>Tahun 2015</li>
-                <li>Tahun 2016</li>
-            </ul>
-        <li>2x Rings</li>
-            <ul>
-                <li>Tahun 2014</li>
-                <li>Tahun 2019</li>
-            </ul>
-        <li>2x Finals MVP</li>
-            <ul>
-                <li>Tahun 2014</li>
-                <li>Tahun 2019</li>
-            </ul>
-    </ul>
+    <div id="kumpulan">
+        <p> Kawhi Telah mengumpulkan :</p>
+        <ul>
+            <li>2x DPOY </li>
+                <ul>
+                    <li>Tahun 2015</li>
+                    <li>Tahun 2016</li>
+                </ul>
+            <li>2x Rings</li>
+                <ul>
+                    <li>Tahun 2014</li>
+                    <li>Tahun 2019</li>
+                </ul>
+            <li>2x Finals MVP</li>
+                <ul>
+                    <li>Tahun 2014</li>
+                    <li>Tahun 2019</li>
+                </ul>
+        </ul>
+    </div>
     </br>
 
     <h3>Untuk Penjelasan lebih lanjut :</h3>
@@ -44,7 +47,7 @@
     </ol>
 
     <h3>Foto Kawhi :</h3>
-
+    <img src="C:\Users\Vincent\Pictures\Kawhi\leonard mother.jpg" height="200" width="150" />
     <h3>Kawhi Stats 3 Season Kebelakang :</h3>
     <table>
         <thead>
@@ -92,6 +95,56 @@
     </table>
 
     <h3>Form :</h3>
-    <form action=""></form>
+    <form action="Hasil.html" method="POST">
+        <fieldset>
+            <legend>Data Diri</legend>
+            <label>Nama :
+                <input type="text" name="nama" maxlength="20">
+            </label><br><br>
+            <label>Tanggal Lahir :
+                <input type="date" name="lahir">
+            </label><br><br>
+            <label>Posisi :
+                <input type="radio" name="posisi" value="pg" checked="checked" />PG
+                <input type="radio" name="posisi" value="sg" />SG
+                <input type="radio" name="posisi" value="sf" />SF
+                <input type="radio" name="posisi" value="pf" />PF
+                <input type="radio" name="posisi" value="c" />C
+            </label><br><br>
+            <label>Gender :
+                <input type="radio" name="gender" value="pria" />Pria
+                <input type="radio" name="gender" value="wanita" />Wanita
+            </label><br><br>
+            <label>Profesi :
+                <select name="profesi">
+                    <option value="pelajar">Pelajar</option>
+                    <option value="wirausaha">Wirausaha</option>
+                    <option value="pns">PNS</option>
+                    <option value="lainnya">Lainnya</option>
+                </select>
+            </label><br><br>
+            
+            <label>Upload Foto Diri :</label><br>
+            <input type="file" name="foto" /><br><br>
+
+            <p>Saran :</p>
+            <textarea name="saran" cols="20" rows="4" placeholder="masukkan saran . . .">
+            </textarea><br><br>
+
+            <input type="submit" value="Selesai"/>
+    </fieldset>
+    </form><br><br>
+
+    <label>Maps Untar :
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.3558736266011!2d106.78585237935269!3d-6.169339362200567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f65c8572640d%3A0xc0a066d78372614e!2sTarumanagara%20University%20Campus%201!5e0!3m2!1sen!2sid!4v1599466635670!5m2!1sen!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
+    </label>
+
+    <meta name="description" content="Kawhi Leonard"/>
+    <meta name="keywords" content="loenard , kawhi , nba"/>
+    <meta name="robots" content="nofollow" />
+    <meta http-equiv="author" content="Vincent Marcelino" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="Fri, 01 Nov 2020 23:59:59 WIB" />
 </body>
 </html>
