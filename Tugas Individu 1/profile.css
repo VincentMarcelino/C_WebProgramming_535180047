@@ -1,5 +1,5 @@
 .box {
-    margin: 150px auto;
+    margin: 70px auto;
     height: 300px;
     width: 600px;
 }
@@ -8,12 +8,13 @@
     content: '';
     display: block;
     clear: both;
+    color: black;
 }
 
 .atas {
     height: 50px;
     width: 600px;
-    background-color: purple;
+    background-color: rgb(110, 113, 255);
 }
 
 h1 {
@@ -24,22 +25,29 @@ h1 {
     height: 250px;
     width: 200px;
     float: left;
-    background-color: #cccccc;
+    background-color: #ffbfbf;
 }
 
 .gambar {
-    background-image: url('../img/a.jpg');
+    background-image: url('foto diri.jpg');
     background-size: cover;
     height: 180px;
     width: 180px;
     border-radius: 50%;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-left: 7.5px;
     
 }
 
 .kanan{
     width: 400px;
     height: 250px;
-    background-color: #cccccc;
+    background-color: #90d4a1;
     float: right;
+}
+
+body{
+    background-attachment: fixed;
+    background: url('bg web.jpg');
+    background-size: cover;
 }

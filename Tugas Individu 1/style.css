@@ -10,12 +10,12 @@ a {
 }
 .medsos {
     padding:5px ;
-    background-color: purple;
+    background-color: rgb(143, 226, 157);
 }
 
 .medsos ul li {
     display: inline-block;
-    color: #ffffff;
+    color: #e9ff99;
     margin-right: 10px;
 }
 
@@ -30,10 +30,15 @@ a {
     clear: both;
 }
 
+header {
+    background-color: rgb(78, 34, 34);
+    color: rgb(247, 195, 247);
+}
+
 header h1{
     float: left;
     padding: 15px 0;
-    color: purple;
+    color: rgb(109, 93, 250);
 }
 
 header ul {
@@ -50,7 +55,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-    background-color: pink;
+    background-color: rgb(0, 0, 0);
 }
 
 .active {
@@ -60,8 +65,8 @@ header ul li a:hover {
 
 .banner {
     height: 60vh;
-    background-image: url('../img/hdd.jpg');
-    background-size: cover;
+    background-image: url('bg.jpg');
+    background-size: auto;
     position: relative;
     display: flex;
     justify-content: center;
@@ -81,10 +86,10 @@ header ul li a:hover {
 }
 
 .banner h2 {
-    color: white;
+    color: rgb(10, 1, 1);
     z-index: 1;
     padding: 20px 25px;
-    border: 3px solid #ffffff;
+    border: 3px solid #000000;
 }
 .vection {
     padding: 50px 0;
@@ -112,6 +117,10 @@ header ul li a:hover {
     border-right-color: pink;   
     border-bottom-color: pink;
     animation: puterin .8s linear infinite;
+}
+
+body{
+    background: url('bg web.jpg');
 }
 
 @keyframes puterin {
