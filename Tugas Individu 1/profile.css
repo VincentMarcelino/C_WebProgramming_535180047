@@ -1,0 +1,44 @@
+.box {
+    margin: 150px auto;
+    height: 300px;
+    width: 600px;
+}
+
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.atas {
+    height: 50px;
+    width: 600px;
+    background-color: purple;
+}
+
+h1 {
+    text-align: center;
+}
+
+.kiri {
+    height: 250px;
+    width: 200px;
+    float: left;
+    background-color: #cccccc;
+}
+
+.gambar {
+    background-image: url('../tugas1/images/imagess.jpg');
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin-top: 10px;
+    
+}
+
+.kanan{
+    width: 400px;
+    height: 250px;
+    background-color: #cccccc;
+    float: right;
+}
