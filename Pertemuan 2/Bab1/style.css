@@ -1,0 +1,20 @@
+.border-solid {
+        border-style: solid;
+        border-width: 2px;
+        border-color: #000000;
+        padding: 2px;
+}
+
+.border-dotted {
+    border-style: dotted;
+    border-width: 2px;
+    border-color: blue;
+    padding: 2px;
+}
+
+.border-dashed {
+    border-style: dashed;
+    border-width: 2px;
+    border-color: blue;
+    padding: 2px;
+}
