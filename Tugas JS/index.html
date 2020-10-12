@@ -4,39 +4,39 @@
         <title>Simple Calculator</title>
     </head>
     <body>
-        <div id='calc-contain'>
-  
-          <form name="calculator">
-            
-            <input type="text" name="answer" />
-            <br>
-            
-            <input type="button" value=" 1 " onclick="calculator.answer.value += '1'" />
-            <input type="button" value=" 2 " onclick="calculator.answer.value += '2'" />
-            <input type="button" value=" 3 " onclick="calculator.answer.value += '3'" />
-            <input type="button" value=" + " onclick="calculator.answer.value += '+'" />
-            <br/>
-            
-            <input type="button" value=" 4 " onclick="calculator.answer.value += '4'" />
-            <input type="button" value=" 5 " onclick="calculator.answer.value += '5'" />
-            <input type="button" value=" 6 " onclick="calculator.answer.value += '6'" />
-            <input type="button" value=" - " onclick="calculator.answer.value += '-'" />
-            </br>
-          
-            <input type="button" value=" 7 " onclick="calculator.answer.value += '7'" />
-            <input type="button" value=" 8 " onclick="calculator.answer.value += '8'" />
-            <input type="button" value=" 9 " onclick="calculator.answer.value += '9'" />
-            <input type="button" value=" x " onclick="calculator.answer.value += '*'" />
-            </br>
-        
-            <input type="button" value=" c " onclick="calculator.answer.value = ''" />
-            <input type="button" value=" 0 " onclick="calculator.answer.value += '0'" />
-            <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" />
-            <input type="button" value=" / " onclick="calculator.answer.value += '/'" />
-            </br>
-  
-    
-          </form>
-        </div>
+        <p>Bil 1 : 
+        <input type="number" name="bil1" id="bil1" ></p>
+        <p>Bil 2 : 
+        <input type="number" name="bil2" id="bil2" ></p>
+        <p>Hasil : 
+        <input type="text" name="hasil" id="akhir" disabled></p>
+        <button  onclick="hitung('+')">+</button>
+        <button  onclick="hitung('-')">-</button>
+        <button  onclick="hitung('*')">*</button>
+        <button  onclick="hitung('/')">/</button>
+        <script>
+          function hitung(tanda) {
+          var ang1 = parseFloat(document.getElementById("bil1").value, 10);
+          var ang2 = parseFloat(document.getElementById("bil2").value, 10);
+          var hasil ;
+
+          switch(tanda) {
+            case "+":
+              hasil = ang1 + ang2;
+              break;
+            case "-":
+              hasil = ang1 - ang2;
+              break;
+            case "*":
+              hasil = ang1 * ang2;
+              break;
+            case "/":
+              hasil = ang1 / ang2;
+              break;
+          }
+
+          document.getElementById("akhir").value = hasil;
+          }
+        </script>
     </body>
 </html>
