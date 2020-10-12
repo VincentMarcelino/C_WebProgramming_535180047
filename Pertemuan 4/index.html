@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pembagian(h){
+            var hasil ;
+            if ( h < 0 || h > 100.0){
+                hasil = 'Error';
+            }
+            else if (h <= 40){
+                hasil = 'E';
+            }
+            else if (h <= 55){
+                hasil = 'D';
+            }
+            else if (h <= 70){
+                hasil = 'C';
+            }
+            else if (h <= 80){
+                hasil = 'B';
+            }
+            else{
+                hasil = 'A';
+            }
+            return hasil ;
+        }
+
+        var warna;
+        warna = ["putih","hitam","biru","kuning","merah"]
+        console.log(pembagian(81));
+        document.write(pembagian(78)," ",warna[3]);
+    </script>
+</body>
+</html>
