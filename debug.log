@@ -1,3 +1,4 @@
 [0907/211511.241:ERROR:settings.cc(325)] Settings version is not 1
 [0914/010836.265:ERROR:file_io.cc(90)] ReadExactly: expected 152, observed 40
 [0914/011119.952:ERROR:settings.cc(325)] Settings version is not 1
+[1014/133718.456:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text1" class="example" style="color: black;">Ini contoh dengan id = text1 dan class example</p>
+    <p id="text2" class="contoh" style="color: black;">Ini contoh dengan id = text2 dan class contoh</p>
+    <h1 class="contoh" style="color: black;">Ini contoh dengan h1 dan class contoh</h1>
+    <h2 class="contoh" name="b" style="color: black;">Ini contoh dengan h2 dan class contoh</h2>
+    <h1 class="example" style="color: black;">Ini contoh dengan h1 dan class example</h1>
+    <ul>ini adalah list
+        <li>satu</li>
+        <li>dua</li>
+        <li>tiga</li>
+    </ul>
+
+    <button id="btnk1">getElementByid text1</button>
+    <button id="btnk2">getElementByTagName h1</button>
+    <button id="btnk3">getElementByClassName contoh</button>
+    <button id="btnk4">getElementByName text1</button>
+
+    <script>
+        var btn1 = document.getElementById("btnk1");
+        var btn2 = document.getElementById("btnk2");
+        var btn3 = document.getElementById("btnk3");
+        var btn4 = document.getElementById("btnk4");
+        var tag = document.getElementsByTagName("h1");
+        var clas = document.getElementsByClassName("contoh");
+
+        btn1.addEventListener('click', () => {
+            document.getElementById("text1").style.color = "blue";
+        });
+
+        
+        btn2.addEventListener('click', () => {
+            for (i = 0; i < tag.length ; i++) {
+                document.getElementsByTagName("h1")[i].style.color = "yellow";
+            }
+            
+        });
+
+        
+        btn3.addEventListener('click', () => {
+            for (i = 0; i < clas.length ; i++) {
+                clas[i].style.color = "red";
+            }
+        });
+
+        
+        btn4.addEventListener('click', () => {
+            var nama = document.getElementsByName("b");
+
+            for (i = 0; i < clas.length ; i++) {
+                nama[i].style.color = "brown";
+            }
+        
+        });
+    </script>
+</body>
+</html>
